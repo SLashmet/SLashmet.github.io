@@ -1,0 +1,85 @@
+/*Grid and Flexbox Syle Sheet*/
+
+/*Sylization of boxes is still handled on main style page
+- There is some commented out code from a previous color theme*/
+
+/*Grid work*/
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+  position: relative;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.grid-box p {
+  line-height: 1.8;
+}
+
+.grid-box h1 {
+  grid-column: span 6;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem ;
+}
+
+.grid-box {
+  color: rgb(36, 36, 36);;
+  background-color: rgba(124, 115, 100, 0.75);
+  /*
+  background-color:  rgba(124, 115, 100, 0.75);
+  */
+  padding: 20px;
+}
+
+/*My added flexbox work*/
+html *{
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.flex-box p{
+  line-height: 1.8;
+}
+
+.flex-box h1 {
+  font-family: 'Montserrat', sans-serif;
+  grid-column: span 6;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem ;
+}
+
+.flex-box {
+  color: rgb(36, 36, 36);
+  background-color: rgba(124, 115, 100, 0.75);
+}
+
+section {
+  padding: 1rem;
+  display: block;
+  margin: 10px;
+}
+
+/* Did not end up needing these sections 
+section.primary {
+  flex: 2 0 auto;
+  width: 30%;
+
+}
+section.secondary {
+  flex: 2 0 auto;
+  width: 30%;
+}
+*/
+
+@media (min-width: 600px) {
+  section {grid-column: span 2;}
+}

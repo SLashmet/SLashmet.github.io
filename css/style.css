@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cabin+Condensed&family=Dancing+Script:wght@600&family=Montserrat:wght@500&display=swap');
+
+/*
+Main css sheet, contains most of the universal style elements
+Exceptions: The technical aspects of the Navbar & FlexBox 
+*/
+
+body {
+  background-image: url('/images/SolidWood.jpg');
+  background-size: cover;
+  background-blend-mode: screen;
+  background-color: #b7ada5;
+  /*
+  background-color:rgba(124, 115, 100, 0.95);
+  */
+  font-family: 'Montserrat', sans-serif;
+  overflow-x :hidden; 
+  margin: 0;
+}
+
+header {
+  display: contents;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  grid-column: span 6;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem ;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  text-align: center;
+}
+
+.bar {
+  color: white;
+  background-color: #522f13b3;
+  /*
+  background-color: rgb(108, 100, 87, 0.85);
+  */
+  padding-top: 5px;
+  padding-bottom: 5px
+}
+
+.bar-box {
+  color:white;
+  text-align: center;
+  background-color: rgba(124, 115, 100, 0.75);
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.bar p {
+  margin-top: 0; 
+  margin-bottom: 5px;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-logo {
+  fill: black;
+}
+
+.svg-logo:hover{
+  fill: #67869b;
+  /*
+  fill: rgb(237, 227, 210);
+  */
+}
+
+.centered-paragraph {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+footer a{
+  color: rgb(235, 216, 181);
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: white;
+}
+
+footer {
+  background-color: #384e55d1;
+  /*
+  background-color: rgba(51, 51, 51, 0.85);
+  */
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/***Contact forum section***/

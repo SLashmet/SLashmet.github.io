@@ -1,0 +1,72 @@
+/*Style page for the responsive contact form*/
+input[type=text], select, textarea{
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  font-family: 'Montserrat', sans-serif;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+button{
+  font-family: 'cabin', sans-serif;
+  background-color: #412814c8;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.contact-container {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f2f2f2;
+  border: 15px rgba(124, 115, 100, 0.75);;
+  padding: 10px;
+  margin: 10px;
+}
+
+.contact-box {
+  max-width: 850px;
+  padding: 10px;
+  margin: 20px auto auto auto;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, .button {
+    width: 100%;
+    margin-top: 0;
+  }
+}

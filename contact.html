@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Petsitting Services</title>
+        <link rel="icon" type="image/x-icon" href="/images/HorseDogCat.png">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/css/navbar.css">
+        <link rel="stylesheet" href="/css/flexandgrid.css">
+        <link rel="stylesheet" href="/css/contactform.css">
+        <script src="../JavaScript/script.js"></script>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    </head>
+
+    <body>
+        <div class="topnav" id="navBarID">
+            <a href="/index.html" class="active">Home</a>
+            <a href="/services.html">Services</a>
+            <a href="/rates.html">Rates</a>
+            <a href="/contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="navBar()">&#9776;</a>
+        </div>
+
+        <div class="bar">
+            <h1>CritterCareWa</h1>
+            <p>All your Petsitting needs in one place</p>
+        </div>
+
+        <main>
+            <div class="contact-box">
+                <div class="contact-container">
+                    <form action="/php/action_page.php" method="post">
+                            <div class="row">
+                              <div class="col-25">
+                                <label for="name">Name</label>
+                              </div>
+                              <div class="col-75">
+                                <input type="text" id="name" name="name" placeholder="Your name..">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-25">
+                                <label for="contact">Phone / Email</label>
+                              </div>
+                              <div class="col-75">
+                                <input type="text" id="contact" name="contact" placeholder="Your phone number or email..">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-25">
+                                <label for="country">Petsitting Service</label>
+                              </div>
+                              <div class="col-75">
+                                <select id="service" name="service">
+                                  <option value="overnight">Overnight</option>
+                                  <option value="dropin">Drop In</option>
+                                  <option value="other">Other</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-25">
+                                <label for="subject">Message</label>
+                              </div>
+                              <div class="col-75">
+                                <textarea id="subject" name="subject" placeholder="How can we help you.."></textarea>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <button type="submit">Submit</button>
+                            </div>
+                          </form>
+                    </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy;2023 by Sabrina Lashmet | <a href="/about.html">About Us</a></p>
+        </footer>
+    </body>
+</html>
